@@ -45,7 +45,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {
-    "@ethersproject/contracts": "^5.5.0"
-  }
+  "dependencies": {}
 }
