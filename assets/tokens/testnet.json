@@ -1,0 +1,26 @@
+[
+  {
+    "name": "USDT_e",
+    "symbol": "USDT",
+    "address": "0x4CeBe90fF9FAE0827Bd3554474de71a0b7AfDD30",
+    "chainId": 1029,
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/aquariusloan/default-token-list/main/assets/tokens/testnet/0x4CeBe90fF9FAE0827Bd3554474de71a0b7AfDD30/logo.png"
+  },
+  {
+    "name": "USDC_e",
+    "symbol": "USDC",
+    "address": "0x6Ab5CA8564Ce2513e7109beDB707A34bC73e39A8",
+    "chainId": 1029,
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/aquariusloan/default-token-list/main/assets/tokens/testnet/0x6Ab5CA8564Ce2513e7109beDB707A34bC73e39A8/logo.png"
+  },
+  {
+    "name": "DAI",
+    "symbol": "DAI",
+    "address": "0xc5092F04f02f0848521B5C33Cb95C76265a3023D",
+    "chainId": 1029,
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/aquariusloan/default-token-list/main/assets/tokens/testnet/0xc5092F04f02f0848521B5C33Cb95C76265a3023D/logo.png"
+  }
+]

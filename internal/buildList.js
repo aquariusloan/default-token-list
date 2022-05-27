@@ -1,13 +1,13 @@
 const { version } = require("../package.json");
 
 // const mainnet = require("../assets/tokens/mainnet.json");
-const cronos = require("../assets/tokens/cronos.json");
-const cronosTestnet = require("../assets/tokens/cronos-testnet.json");
+const mainnet = require("../assets/tokens/mainnet.json");
+const testnet = require("../assets/tokens/testnet.json");
 
 module.exports = function buildList() {
   const parsed = version.split(".");
   return {
-    name: "agile",
+    name: "aquarius",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],
@@ -16,12 +16,11 @@ module.exports = function buildList() {
     },
     tags: {},
     logoURI:
-      "https://raw.githubusercontent.com/agiledefi/default-token-list/master/assets/logox200.png",
-    keywords: ["AgileFinance", "default"],
+      "https://raw.githubusercontent.com/aquariusloan/default-token-list/master/assets/logox200.png",
+    keywords: ["AquariusLoan", "default"],
     tokens: [
-      // ...mainnet,
-      ...cronos,
-      ...cronosTestnet,
+      ...mainnet,
+      ...testnet,
     ]
       // sort them by symbol for easy readability
       .sort((t1, t2) => {

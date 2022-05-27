@@ -4,15 +4,15 @@ const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit();
 
-const { ChainId } = require("@agile/sdk");
+const { ChainId } = require("@aquarius/sdk");
 
 const fs = require("fs");
 
 const { resolve } = require("path");
 
 const NAME = {
-  [ChainId.MAINNET]: "cronos",
-  [ChainId.TESTNET]: "cronos-testnet",
+  [ChainId.MAINNET]: "mainnet",
+  [ChainId.TESTNET]: "testnet",
 };
 
 (async () => {
@@ -28,10 +28,10 @@ const NAME = {
 
       const tokens = require(path);
 
-      // Grab file file names of the agiledefi/icons repo at the token path
+      // Grab file file names of the aquariusloan/icons repo at the token path
       // we can use this to see if our default list is missing icons
       const { data } = await octokit.rest.repos.getContent({
-        owner: "agiledefi",
+        owner: "aquariusloan",
         repo: "icons",
         path: "token",
       });
@@ -63,9 +63,9 @@ const NAME = {
         }
 
         // Check if logoURI has correct path
-        if (!token.logoURI.includes("agiledefi/icons")) {
+        if (!token.logoURI.includes("aquariusloan/icons")) {
           // TODO: Automate this part...
-          const logoURI = `https://raw.githubusercontent.com/agiledefi/icons/master/token/${icon}.jpg`;
+          const logoURI = `https://raw.githubusercontent.com/aquariusloan/icons/master/token/${icon}.jpg`;
 
           console.log(`Update Logo URI for ${token.symbol} with ${logoURI}`);
         } else {

@@ -1,35 +1,35 @@
 {
-  "name": "@agile/default-token-list",
+  "name": "@aquarius/default-token-list",
   "license": "MIT",
-  "version": "1.0.1",
-  "description": "◦ The AgileFinance default token list",
-  "main": "build/agile-default.tokenlist.json",
+  "version": "1.0.0",
+  "description": "◦ The AquariusLoan default token list",
+  "main": "build/aquarius-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
-    "build": "rimraf build && mkdir -p build && node internal/write.js > build/agile-default.tokenlist.json",
+    "build": "rimraf build && mkdir -p build && node internal/write.js > build/aquarius-default.tokenlist.json",
     "prepublishOnly": "npm test && npm run build",
     "sync": "node internal/sync.js"
   },
   "files": [
-    "build/agile-default.tokenlist.json"
+    "build/aquarius-default.tokenlist.json"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agiledefi/default-token-list.git"
+    "url": "git+https://github.com/aquariusloan/default-token-list.git"
   },
   "keywords": [
-    "AgileFinance",
-    "agiledefi",
+    "AquariusLoan",
+    "aquarius",
     "default",
     "token",
     "list"
   ],
   "bugs": {
-    "url": "https://github.com/agiledefi/default-token-list/issues"
+    "url": "https://github.com/aquariusloan/default-token-list/issues"
   },
-  "homepage": "https://github.com/agiledefi/default-token-list#readme",
+  "homepage": "https://github.com/aquariusloan/default-token-list#readme",
   "devDependencies": {
-    "@agile/sdk": "git+https://github.com/agiledefi/agile-swap-sdk.git",
+    "@aquarius/sdk": "git+https://github.com/aquariusloan/aquarius-swap-sdk.git",
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/solidity": "^5.3.0",
     "@octokit/rest": "^18.6.2",
